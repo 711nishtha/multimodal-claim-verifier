@@ -1,0 +1,194 @@
+{
+  "total_rows": 20,
+  "total_rows_correct": 3,
+  "overall_row_accuracy": 0.15,
+  "macro_avg_field_accuracy": 0.6438,
+  "per_field_accuracy": {
+    "evidence_standard_met": 0.9,
+    "risk_flags": 0.35,
+    "issue_type": 0.45,
+    "object_part": 0.8,
+    "claim_status": 0.6,
+    "supporting_image_ids": 0.8,
+    "valid_image": 0.8,
+    "severity": 0.45
+  },
+  "mismatches": [
+    {
+      "row_index": 1,
+      "user_id": "user_002",
+      "claim_object": "car",
+      "differences": [
+        "risk_flags: got 'claim_mismatch;manual_review_required' expected 'none'",
+        "issue_type: got 'dent' expected 'scratch'",
+        "claim_status: got 'contradicted' expected 'supported'",
+        "severity: got 'high' expected 'low'"
+      ]
+    },
+    {
+      "row_index": 2,
+      "user_id": "user_004",
+      "claim_object": "car",
+      "differences": [
+        "severity: got 'low' expected 'medium'"
+      ]
+    },
+    {
+      "row_index": 3,
+      "user_id": "user_007",
+      "claim_object": "car",
+      "differences": [
+        "risk_flags: got 'claim_mismatch;manual_review_required' expected 'none'",
+        "issue_type: got 'glass_shatter' expected 'broken_part'",
+        "claim_status: got 'contradicted' expected 'supported'",
+        "severity: got 'high' expected 'medium'"
+      ]
+    },
+    {
+      "row_index": 4,
+      "user_id": "user_005",
+      "claim_object": "car",
+      "differences": [
+        "risk_flags: got 'user_history_risk' expected 'claim_mismatch;user_history_risk;manual_review_required'",
+        "issue_type: got 'dent' expected 'scratch'",
+        "claim_status: got 'supported' expected 'contradicted'",
+        "severity: got 'medium' expected 'low'"
+      ]
+    },
+    {
+      "row_index": 5,
+      "user_id": "user_006",
+      "claim_object": "car",
+      "differences": [
+        "risk_flags: got 'non_original_image' expected 'wrong_angle;damage_not_visible'",
+        "valid_image: got 'false' expected 'true'"
+      ]
+    },
+    {
+      "row_index": 7,
+      "user_id": "user_008",
+      "claim_object": "car",
+      "differences": [
+        "risk_flags: got 'damage_not_visible;possible_manipulation;non_original_image;user_history_risk' expected 'claim_mismatch;non_original_image;user_history_risk;manual_review_required'",
+        "issue_type: got 'unknown' expected 'broken_part'",
+        "object_part: got 'hood' expected 'front_bumper'",
+        "claim_status: got 'not_enough_information' expected 'contradicted'",
+        "supporting_image_ids: got 'none' expected 'img_1'",
+        "severity: got 'unknown' expected 'high'"
+      ]
+    },
+    {
+      "row_index": 8,
+      "user_id": "user_009",
+      "claim_object": "laptop",
+      "differences": [
+        "risk_flags: got 'claim_mismatch;manual_review_required' expected 'none'",
+        "issue_type: got 'glass_shatter' expected 'crack'",
+        "claim_status: got 'contradicted' expected 'supported'",
+        "severity: got 'high' expected 'medium'"
+      ]
+    },
+    {
+      "row_index": 10,
+      "user_id": "user_011",
+      "claim_object": "laptop",
+      "differences": [
+        "issue_type: got 'water_damage' expected 'stain'"
+      ]
+    },
+    {
+      "row_index": 11,
+      "user_id": "user_012",
+      "claim_object": "laptop",
+      "differences": [
+        "risk_flags: got 'low_light_or_glare;wrong_object_part' expected 'none'",
+        "object_part: got 'lid' expected 'corner'",
+        "claim_status: got 'contradicted' expected 'supported'"
+      ]
+    },
+    {
+      "row_index": 12,
+      "user_id": "user_018",
+      "claim_object": "laptop",
+      "differences": [
+        "issue_type: got 'glass_shatter' expected 'crack'"
+      ]
+    },
+    {
+      "row_index": 13,
+      "user_id": "user_020",
+      "claim_object": "laptop",
+      "differences": [
+        "risk_flags: got 'claim_mismatch;user_history_risk;manual_review_required' expected 'damage_not_visible;user_history_risk;manual_review_required'",
+        "issue_type: got 'scratch' expected 'none'",
+        "severity: got 'low' expected 'none'"
+      ]
+    },
+    {
+      "row_index": 14,
+      "user_id": "user_015",
+      "claim_object": "package",
+      "differences": [
+        "severity: got 'low' expected 'medium'"
+      ]
+    },
+    {
+      "row_index": 15,
+      "user_id": "user_030",
+      "claim_object": "package",
+      "differences": [
+        "risk_flags: got 'non_original_image' expected 'none'",
+        "valid_image: got 'false' expected 'true'"
+      ]
+    },
+    {
+      "row_index": 16,
+      "user_id": "user_031",
+      "claim_object": "package",
+      "differences": [
+        "risk_flags: got 'user_history_risk' expected 'user_history_risk;manual_review_required'"
+      ]
+    },
+    {
+      "row_index": 17,
+      "user_id": "user_032",
+      "claim_object": "package",
+      "differences": [
+        "evidence_standard_met: got 'true' expected 'false'",
+        "risk_flags: got 'manual_review_required' expected 'cropped_or_obstructed;damage_not_visible;manual_review_required'",
+        "issue_type: got 'missing_part' expected 'unknown'",
+        "claim_status: got 'supported' expected 'not_enough_information'",
+        "supporting_image_ids: got 'img_1' expected 'none'",
+        "valid_image: got 'true' expected 'false'",
+        "severity: got 'medium' expected 'unknown'"
+      ]
+    },
+    {
+      "row_index": 18,
+      "user_id": "user_033",
+      "claim_object": "package",
+      "differences": [
+        "evidence_standard_met: got 'false' expected 'true'",
+        "risk_flags: got 'user_history_risk' expected 'wrong_object;claim_mismatch;user_history_risk;manual_review_required'",
+        "issue_type: got 'dent' expected 'unknown'",
+        "object_part: got 'box' expected 'unknown'",
+        "claim_status: got 'not_enough_information' expected 'contradicted'",
+        "supporting_image_ids: got 'none' expected 'img_1'",
+        "severity: got 'unknown' expected 'low'"
+      ]
+    },
+    {
+      "row_index": 19,
+      "user_id": "user_034",
+      "claim_object": "package",
+      "differences": [
+        "risk_flags: got 'wrong_object_part;possible_manipulation;text_instruction_present;user_history_risk' expected 'damage_not_visible;text_instruction_present;user_history_risk;manual_review_required'",
+        "issue_type: got 'torn_packaging' expected 'none'",
+        "object_part: got 'package_corner' expected 'seal'",
+        "supporting_image_ids: got 'img_1' expected 'img_1;img_2'",
+        "valid_image: got 'false' expected 'true'",
+        "severity: got 'medium' expected 'none'"
+      ]
+    }
+  ]
+}
